@@ -1,0 +1,2 @@
+# System packages for Streamlit Cloud (if needed)
+# Usually not needed for pure Python apps, but include just in case

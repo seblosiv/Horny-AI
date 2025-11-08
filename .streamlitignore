@@ -1,0 +1,20 @@
+# Files to ignore when deploying to Streamlit Cloud
+*.pyc
+__pycache__/
+.env
+.env.local
+*.log
+.git/
+.vscode/
+.idea/
+*.db
+*.sqlite
+.pytest_cache/
+htmlcov/
+
+# Don't need these on Streamlit Cloud
+app/
+scripts/
+examples/
+Dockerfile
+docker-compose.yml

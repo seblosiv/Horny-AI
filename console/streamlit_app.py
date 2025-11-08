@@ -6,9 +6,14 @@ import httpx
 import json
 from datetime import datetime
 import time
+import os
 
-# Configuration
-API_BASE_URL = "http://localhost:8000"
+# Configuration - supports local dev and Streamlit Cloud
+# Priority: Streamlit secrets > Environment variables > Default
+if hasattr(st, 'secrets') and 'API_BASE_URL' in st.secrets:
+    API_BASE_URL = st.secrets['API_BASE_URL']
+else:
+    API_BASE_URL = os.getenv('API_BASE_URL', 'http://localhost:8000')
 
 # Page config
 st.set_page_config(

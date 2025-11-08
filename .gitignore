@@ -59,7 +59,7 @@ htmlcov/
 .ipynb_checkpoints/
 
 # Streamlit
-.streamlit/
+.streamlit/secrets.toml
 
 # Alembic
 alembic/versions/*.pyc
